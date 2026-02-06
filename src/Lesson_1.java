@@ -8,5 +8,4 @@ void main() {
     double S = (a * b) / 2;
     double P = a + b + c;
     IO.println("Площадь треугольника:"+S);
-    IO.println("Периметр треугольника:"+P);
 }
