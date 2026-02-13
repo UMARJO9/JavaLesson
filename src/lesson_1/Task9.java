@@ -1,3 +1,5 @@
+package lesson_1;
+
 public class Task9 {
     public static void main(String[] args) {
         int binary = 0b1010;

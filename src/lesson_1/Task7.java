@@ -1,3 +1,5 @@
+package lesson_1;
+
 public class Task7 {
     public static void main(String[] args) {
         var integer = 100;

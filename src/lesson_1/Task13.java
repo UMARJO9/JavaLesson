@@ -1,3 +1,5 @@
+package lesson_1;
+
 public class Task13 {
     public static void main(String[] args) {
         String text = """
