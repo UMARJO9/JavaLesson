@@ -1,7 +1,4 @@
-package lesson_4;
-
-import java.util.Locale;
-import java.util.Scanner;
+package lesson_5;
 
 public class ForTask {
     public static void main(String[] args) {
