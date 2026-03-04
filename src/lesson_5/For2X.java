@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class For2X {
     public static void main(String[] args){
-        java.util.Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         IO.print("A : ");
         int a = scanner.nextInt();
         IO.print("B : ");
