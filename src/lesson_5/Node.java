@@ -5,12 +5,13 @@ import java.util.Scanner;
 public class Node {
     public static void main(String[] args){
         Scanner sc = new  Scanner(System.in);
-        IO.print("N: ");
+        IO.print("N1: ");
         int n1 = sc.nextInt();
-        IO.print("N2 : ");
+        IO.print("N2: ");
         int n2 = sc.nextInt();
         while ( n2 != 0){
             int x = n1 % n2;
+            IO.println("Остатка : "+x);
             n1 = n2;
             n2 = x;
         }
