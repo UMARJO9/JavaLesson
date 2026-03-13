@@ -11,7 +11,6 @@ public class Test {
         int shumora = 0;
         int javob;
         int savoliTasoduf;
-
         boolean pursida1 = false;
         boolean pursida2 = false;
         boolean pursida3 = false;
@@ -23,7 +22,7 @@ public class Test {
         boolean pursida9 = false;
         boolean pursida10 = false;
 
-        System.out.println("=== TEST AZ BARNOMASOZI ===");
+        System.out.println("=== Тест для  Програмистов ===");
         System.out.println("10 savol, 4 variant javob");
         System.out.println("Har javob durust = 5 ball");
         System.out.println("===========================\n");
