@@ -23,6 +23,17 @@ class Phone {
         System.out.println("Звонит " + name);
     }
 
+    void receiveCall(String name, String phoneNumber) {
+        System.out.println("Звонит " + name + " с номера " + phoneNumber);
+    }
+
+    void sendMessage(String... numbers) {
+        System.out.println("Отправка сообщения на номера:");
+        for (String num : numbers) {
+            System.out.println("  -> " + num);
+        }
+    }
+
     String getNumber() {
         return number;
     }
@@ -51,10 +62,20 @@ class Phone {
         System.out.println("Номер: " + phone3.number);
         System.out.println("Вес: " + phone3.weight + " г");
 
-        System.out.println("\n=== Звонки ===");
+        System.out.println("\n=== Звонки (имя) ===");
         phone1.receiveCall("Мама");
         phone2.receiveCall("Друг");
         phone3.receiveCall("Босс");
+
+        System.out.println("\n=== Звонки (имя + номер) ===");
+        phone1.receiveCall("Мама", "+7-900-000-00-01");
+        phone2.receiveCall("Друг", "+7-900-000-00-02");
+        phone3.receiveCall("Босс", "+7-900-000-00-03");
+
+        System.out.println("\n=== sendMessage ===");
+        phone1.sendMessage("+7-999-222-22-22", "+7-999-333-33-33");
+        phone2.sendMessage("+7-999-111-11-11");
+        phone3.sendMessage("+7-999-111-11-11", "+7-999-222-22-22", "+7-999-444-44-44");
 
         System.out.println("\n=== getNumber() ===");
         System.out.println("Номер phone1: " + phone1.getNumber());
