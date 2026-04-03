@@ -11,6 +11,14 @@ class Phone {
         this.weight = weight;
     }
 
+    Phone(String number, String model) {
+        this.number = number;
+        this.model = model;
+    }
+
+    Phone() {
+    }
+
     void receiveCall(String name) {
         System.out.println("Звонит " + name);
     }
@@ -21,8 +29,12 @@ class Phone {
 
     public static void main(String[] args) {
         Phone phone1 = new Phone("+7-999-111-11-11", "iPhone 15", 171.0);
-        Phone phone2 = new Phone("+7-999-222-22-22", "Samsung S24", 168.0);
-        Phone phone3 = new Phone("+7-999-333-33-33", "Xiaomi 14", 193.0);
+        Phone phone2 = new Phone("+7-999-222-22-22", "Samsung S24");
+
+        Phone phone3 = new Phone();
+        phone3.number = "+7-999-333-33-33";
+        phone3.model = "Xiaomi 14";
+        phone3.weight = 193.0;
 
         System.out.println("=== Телефон 1 ===");
         System.out.println("Модель: " + phone1.model);
